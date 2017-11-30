@@ -22,8 +22,9 @@ public class Kasir extends Orang{
     
     public  void showAllTransaksi() {
         for (int i = 0; i < daftarTransaksi.size(); i++) {
-            daftarTransaksi.get(i).getId();
-            daftarTransaksi.get(i).getId(); 
+            System.out.println("ID  : "+daftarTransaksi.get(i).getId());
+            System.out.println("ID-Pembeli  : "+daftarTransaksi.get(i).getPembeli().id);
+            System.out.println("ID-Kasir    : "+daftarTransaksi.get(i).getKasir().id);
         }
     }
 
@@ -45,6 +46,10 @@ public class Kasir extends Orang{
 
     public ArrayList<Transaksi> getTransaksi() {
         return daftarTransaksi;
+    }
+
+    Object Transaksi() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 

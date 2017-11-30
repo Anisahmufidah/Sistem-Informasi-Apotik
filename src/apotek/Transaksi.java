@@ -79,7 +79,9 @@ public class Transaksi {
     
     public void buktiPembayaran(){
         System.out.println("Bukti Pembayaran\n\n");
-        System.out.println("Tanggal : " + this.getCurrentDate() + "\n\n");
+        System.out.println("Tanggal     : " + this.getCurrentDate());
+        System.out.println("ID-Kasir    : "+kasir.id);
+        System.out.println("ID-Pembeli  : "+pembeli.id + "\n\n");
         System.out.println("-------------------------------------------");
         System.out.println("Nama Obat \tQty \t\tHarga");
         System.out.println("-------------------------------------------");
