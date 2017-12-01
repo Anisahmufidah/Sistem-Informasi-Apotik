@@ -1,4 +1,4 @@
-package apotek;
+package model;
 public class TransaksiDetail {
     private Transaksi trx;
     private Obat obat;

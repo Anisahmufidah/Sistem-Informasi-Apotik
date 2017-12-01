@@ -1,4 +1,4 @@
-package apotek;
+package model;
 
 public class Obat {
     private String id;
