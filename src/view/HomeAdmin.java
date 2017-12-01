@@ -5,11 +5,83 @@
  */
 package view;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author TRI
  */
 public class HomeAdmin extends javax.swing.JFrame {
+
+    /**
+     * @return the btnInputKasir
+     */
+    public javax.swing.JButton getBtnInputKasir() {
+        return btnInputKasir;
+    }
+
+    /**
+     * @param btnInputKasir the btnInputKasir to set
+     */
+    public void setBtnInputKasir(javax.swing.JButton btnInputKasir) {
+        this.btnInputKasir = btnInputKasir;
+    }
+
+    /**
+     * @return the btnInputPembeli
+     */
+    public javax.swing.JButton getBtnInputPembeli() {
+        return btnInputPembeli;
+    }
+
+    /**
+     * @param btnInputPembeli the btnInputPembeli to set
+     */
+    public void setBtnInputPembeli(javax.swing.JButton btnInputPembeli) {
+        this.btnInputPembeli = btnInputPembeli;
+    }
+
+    /**
+     * @return the btnLihatPembeli
+     */
+    public javax.swing.JButton getBtnLihatPembeli() {
+        return btnLihatPembeli;
+    }
+
+    /**
+     * @param btnLihatPembeli the btnLihatPembeli to set
+     */
+    public void setBtnLihatPembeli(javax.swing.JButton btnLihatPembeli) {
+        this.btnLihatPembeli = btnLihatPembeli;
+    }
+
+    /**
+     * @return the btnLihatkasir
+     */
+    public javax.swing.JButton getBtnLihatkasir() {
+        return btnLihatkasir;
+    }
+
+    /**
+     * @param btnLihatkasir the btnLihatkasir to set
+     */
+    public void setBtnLihatkasir(javax.swing.JButton btnLihatkasir) {
+        this.btnLihatkasir = btnLihatkasir;
+    }
+
+    /**
+     * @return the btnLogout
+     */
+    public javax.swing.JButton getBtnLogout() {
+        return btnLogout;
+    }
+
+    /**
+     * @param btnLogout the btnLogout to set
+     */
+    public void setBtnLogout(javax.swing.JButton btnLogout) {
+        this.btnLogout = btnLogout;
+    }
 
     /**
      * Creates new form Admin
@@ -28,49 +100,49 @@ public class HomeAdmin extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnInputKasir = new javax.swing.JButton();
+        btnInputPembeli = new javax.swing.JButton();
+        btnLihatkasir = new javax.swing.JButton();
+        btnLihatPembeli = new javax.swing.JButton();
+        btnLogout = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 18)); // NOI18N
         jLabel1.setText("Admin");
 
-        jButton1.setText("Input Kasir");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnInputKasir.setText("Input Kasir");
+        btnInputKasir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnInputKasirActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Input Pembeli");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnInputPembeli.setText("Input Pembeli");
+        btnInputPembeli.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnInputPembeliActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Lihat Kasir");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnLihatkasir.setText("Lihat Kasir");
+        btnLihatkasir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnLihatkasirActionPerformed(evt);
             }
         });
 
-        jButton4.setText("Lihat Pembeli");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnLihatPembeli.setText("Lihat Pembeli");
+        btnLihatPembeli.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnLihatPembeliActionPerformed(evt);
             }
         });
 
-        jButton5.setText("Logout");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnLogout.setText("Logout");
+        btnLogout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnLogoutActionPerformed(evt);
             }
         });
 
@@ -83,13 +155,13 @@ public class HomeAdmin extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(btnInputPembeli, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnInputKasir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(75, 75, 75)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(btnLihatPembeli, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnLihatkasir, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnLogout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(54, 54, 54))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel1)
@@ -102,39 +174,39 @@ public class HomeAdmin extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton3))
+                    .addComponent(btnInputKasir)
+                    .addComponent(btnLihatkasir))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton4))
+                    .addComponent(btnInputPembeli)
+                    .addComponent(btnLihatPembeli))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
-                .addComponent(jButton5)
+                .addComponent(btnLogout)
                 .addGap(32, 32, 32))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnInputKasirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInputKasirActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnInputKasirActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnInputPembeliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInputPembeliActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnInputPembeliActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnLihatkasirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLihatkasirActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnLihatkasirActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnLihatPembeliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLihatPembeliActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnLihatPembeliActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnLogoutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -172,11 +244,18 @@ public class HomeAdmin extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton btnInputKasir;
+    private javax.swing.JButton btnInputPembeli;
+    private javax.swing.JButton btnLihatPembeli;
+    private javax.swing.JButton btnLihatkasir;
+    private javax.swing.JButton btnLogout;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
+    public void addActionListener(ActionListener e) {
+        this.btnInputKasir.addActionListener(e);        
+        this.btnLihatPembeli.addActionListener(e);        
+        this.btnLihatkasir.addActionListener(e);  
+        this.btnInputPembeli.addActionListener(e);
+        this.btnLogout.addActionListener(e);  
+    }
 }

@@ -5,6 +5,8 @@
  */
 package view;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author TRI
@@ -27,41 +29,41 @@ public class HomeKasir extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnInputTransaksi = new javax.swing.JButton();
+        btnInputObat = new javax.swing.JButton();
+        btnLihatTransaksi = new javax.swing.JButton();
+        btnLihatObat = new javax.swing.JButton();
+        btnLogout = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Input Transaksi");
+        btnInputTransaksi.setText("Input Transaksi");
 
-        jButton2.setText("Input Obat");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnInputObat.setText("Input Obat");
+        btnInputObat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnInputObatActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Lihat Transaksi");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnLihatTransaksi.setText("Lihat Transaksi");
+        btnLihatTransaksi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnLihatTransaksiActionPerformed(evt);
             }
         });
 
-        jButton4.setText("Lihat Obat");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnLihatObat.setText("Lihat Obat");
+        btnLihatObat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnLihatObatActionPerformed(evt);
             }
         });
 
-        jButton5.setText("Logout");
+        btnLogout.setText("Logout");
 
         jLabel1.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 18)); // NOI18N
         jLabel1.setText("Home Kasir");
@@ -77,16 +79,16 @@ public class HomeKasir extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(79, 79, 79)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton5)
+                    .addComponent(btnLogout)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(btnInputTransaksi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnInputObat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGap(30, 30, 30)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addComponent(btnLihatTransaksi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnLihatObat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGroup(layout.createSequentialGroup()
                             .addGap(81, 81, 81)
                             .addComponent(jLabel1))
@@ -108,31 +110,31 @@ public class HomeKasir extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton3))
+                    .addComponent(btnInputTransaksi)
+                    .addComponent(btnLihatTransaksi))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton4))
+                    .addComponent(btnInputObat)
+                    .addComponent(btnLihatObat))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
-                .addComponent(jButton5)
+                .addComponent(btnLogout)
                 .addGap(17, 17, 17))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnInputObatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInputObatActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnInputObatActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnLihatTransaksiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLihatTransaksiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnLihatTransaksiActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnLihatObatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLihatObatActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnLihatObatActionPerformed
 
     /**
      * @param args the command line arguments
@@ -170,13 +172,91 @@ public class HomeKasir extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton btnInputObat;
+    private javax.swing.JButton btnInputTransaksi;
+    private javax.swing.JButton btnLihatObat;
+    private javax.swing.JButton btnLihatTransaksi;
+    private javax.swing.JButton btnLogout;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
+
+    /**
+     * @return the btnInputObat
+     */
+    public javax.swing.JButton getBtnInputObat() {
+        return btnInputObat;
+    }
+
+    /**
+     * @param btnInputObat the btnInputObat to set
+     */
+    public void setBtnInputObat(javax.swing.JButton btnInputObat) {
+        this.btnInputObat = btnInputObat;
+    }
+
+    /**
+     * @return the btnInputTransaksi
+     */
+    public javax.swing.JButton getBtnInputTransaksi() {
+        return btnInputTransaksi;
+    }
+
+    /**
+     * @param btnInputTransaksi the btnInputTransaksi to set
+     */
+    public void setBtnInputTransaksi(javax.swing.JButton btnInputTransaksi) {
+        this.btnInputTransaksi = btnInputTransaksi;
+    }
+
+    /**
+     * @return the btnLihatObat
+     */
+    public javax.swing.JButton getBtnLihatObat() {
+        return btnLihatObat;
+    }
+
+    /**
+     * @param btnLihatObat the btnLihatObat to set
+     */
+    public void setBtnLihatObat(javax.swing.JButton btnLihatObat) {
+        this.btnLihatObat = btnLihatObat;
+    }
+
+    /**
+     * @return the btnLihatTransaksi
+     */
+    public javax.swing.JButton getBtnLihatTransaksi() {
+        return btnLihatTransaksi;
+    }
+
+    /**
+     * @param btnLihatTransaksi the btnLihatTransaksi to set
+     */
+    public void setBtnLihatTransaksi(javax.swing.JButton btnLihatTransaksi) {
+        this.btnLihatTransaksi = btnLihatTransaksi;
+    }
+
+    /**
+     * @return the btnLogout
+     */
+    public javax.swing.JButton getBtnLogout() {
+        return btnLogout;
+    }
+
+    /**
+     * @param btnLogout the btnLogout to set
+     */
+    public void setBtnLogout(javax.swing.JButton btnLogout) {
+        this.btnLogout = btnLogout;
+    }
+    
+    public void addActionListener(ActionListener e) {
+        this.btnInputObat.addActionListener(e);  
+        this.btnInputTransaksi.addActionListener(e);  
+        this.btnLihatObat.addActionListener(e);  
+        this.btnLihatTransaksi.addActionListener(e);  
+        this.btnLogout.addActionListener(e);  
+    }
 }

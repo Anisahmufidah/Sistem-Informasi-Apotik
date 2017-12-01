@@ -5,16 +5,74 @@
  */
 package view;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author TRI
  */
-public class FromInputPembeli extends javax.swing.JFrame {
+public class FormInputPembeli extends javax.swing.JFrame {
+
+    /**
+     * @return the btnSave
+     */
+    public javax.swing.JButton getBtnSave() {
+        return btnSave;
+    }
+
+    /**
+     * @param btnSave the btnSave to set
+     */
+    public void setBtnSave(javax.swing.JButton btnSave) {
+        this.btnSave = btnSave;
+    }
+
+    /**
+     * @return the txtAlamat
+     */
+    public javax.swing.JTextField getTxtAlamat() {
+        return txtAlamat;
+    }
+
+    /**
+     * @param txtAlamat the txtAlamat to set
+     */
+    public void setTxtAlamat(javax.swing.JTextField txtAlamat) {
+        this.txtAlamat = txtAlamat;
+    }
+
+    /**
+     * @return the txtNama
+     */
+    public javax.swing.JTextField getTxtNama() {
+        return txtNama;
+    }
+
+    /**
+     * @param txtNama the txtNama to set
+     */
+    public void setTxtNama(javax.swing.JTextField txtNama) {
+        this.txtNama = txtNama;
+    }
+
+    /**
+     * @return the txtNohp
+     */
+    public javax.swing.JTextField getTxtNohp() {
+        return txtNohp;
+    }
+
+    /**
+     * @param txtNohp the txtNohp to set
+     */
+    public void setTxtNohp(javax.swing.JTextField txtNohp) {
+        this.txtNohp = txtNohp;
+    }
 
     /**
      * Creates new form FromInputPembeli
      */
-    public FromInputPembeli() {
+    public FormInputPembeli() {
         initComponents();
     }
 
@@ -28,21 +86,21 @@ public class FromInputPembeli extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        txtNama = new javax.swing.JTextField();
+        btnSave = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        txtNohp = new javax.swing.JTextField();
+        txtAlamat = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 14)); // NOI18N
         jLabel1.setText("Pembeli Baru");
 
-        jButton1.setText("Save");
+        btnSave.setText("Save");
 
         jLabel2.setText("ID");
 
@@ -58,7 +116,7 @@ public class FromInputPembeli extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(btnSave)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(61, 61, 61)
@@ -69,9 +127,9 @@ public class FromInputPembeli extends javax.swing.JFrame {
                     .addComponent(jLabel5))
                 .addGap(49, 49, 49)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 166, Short.MAX_VALUE)
-                    .addComponent(jTextField2)
-                    .addComponent(jTextField3))
+                    .addComponent(txtNama, javax.swing.GroupLayout.DEFAULT_SIZE, 166, Short.MAX_VALUE)
+                    .addComponent(txtNohp)
+                    .addComponent(txtAlamat))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(165, Short.MAX_VALUE)
@@ -87,18 +145,18 @@ public class FromInputPembeli extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNohp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtAlamat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
-                .addComponent(jButton1)
+                .addComponent(btnSave)
                 .addGap(42, 42, 42))
         );
 
@@ -141,14 +199,17 @@ public class FromInputPembeli extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnSave;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField txtAlamat;
+    private javax.swing.JTextField txtNama;
+    private javax.swing.JTextField txtNohp;
     // End of variables declaration//GEN-END:variables
+    public void addActionListener(ActionListener e) {
+        this.btnSave.addActionListener(e);        
+    }
 }

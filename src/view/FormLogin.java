@@ -5,16 +5,18 @@
  */
 package view;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author TRI
  */
-public class FromLogin extends javax.swing.JFrame {
+public class FormLogin extends javax.swing.JFrame {
 
     /**
      * Creates new form FromLogin
      */
-    public FromLogin() {
+    public FormLogin() {
         initComponents();
     }
 
@@ -147,7 +149,6 @@ public class FromLogin extends javax.swing.JFrame {
 //            }
 //        });
 //    }
-    private void j
     
     
     
@@ -159,4 +160,50 @@ public class FromLogin extends javax.swing.JFrame {
     private javax.swing.JTextField txtID;
     private javax.swing.JPasswordField txtPwd;
     // End of variables declaration//GEN-END:variables
+
+    /**
+     * @return the btnLogin
+     */
+    public javax.swing.JButton getBtnLogin() {
+        return btnLogin;
+    }
+
+    /**
+     * @param btnLogin the btnLogin to set
+     */
+    public void setBtnLogin(javax.swing.JButton btnLogin) {
+        this.btnLogin = btnLogin;
+    }
+
+    /**
+     * @return the txtID
+     */
+    public javax.swing.JTextField getTxtID() {
+        return txtID;
+    }
+
+    /**
+     * @param txtID the txtID to set
+     */
+    public void setTxtID(javax.swing.JTextField txtID) {
+        this.txtID = txtID;
+    }
+
+    /**
+     * @return the txtPwd
+     */
+    public javax.swing.JPasswordField getTxtPwd() {
+        return txtPwd;
+    }
+
+    /**
+     * @param txtPwd the txtPwd to set
+     */
+    public void setTxtPwd(javax.swing.JPasswordField txtPwd) {
+        this.txtPwd = txtPwd;
+    }
+    
+    public void addActionListener(ActionListener e) {
+        this.btnLogin.addActionListener(e);        
+    }
 }
