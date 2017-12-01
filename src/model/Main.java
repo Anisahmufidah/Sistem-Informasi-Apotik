@@ -14,6 +14,7 @@ public class Main {
         // TODO code application logic here
         TransaksiController tc = new TransaksiController();
         
+        
 //        TransaksiDao transaksiDao = new TransaksiDaoImpl();
 //        System.out.println("id = " + transaksiDao.getTransaksi(1).getPembeli().getNama());
 //        ArrayList<Kasir> daftarKasir = new ArrayList();

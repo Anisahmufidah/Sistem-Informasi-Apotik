@@ -4,9 +4,18 @@ package model;
 public abstract class Orang{
     String id;
     String nama;
+    String pwd;
     String alamat;
     String noHp;
 
+    public String getPwd() {
+        return pwd;
+    }
+
+    public void setPassword(String pwd) {
+        this.pwd = pwd;
+    }
+    
     public String getId() {
         return id;
     }

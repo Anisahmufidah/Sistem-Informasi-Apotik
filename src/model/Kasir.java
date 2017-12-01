@@ -8,8 +8,9 @@ public class Kasir extends Orang{
     private int shift;
     private ArrayList<Transaksi> daftarTransaksi = new ArrayList();
     
-    public Kasir(String id, String nama, int gaji,String noHp, String alamat) {
+    public Kasir(String id, String pwd, String nama, int gaji,String noHp, String alamat) {
         this.id = id;
+        this.pwd = pwd;
         this.nama = nama;
         this.gaji = gaji;
         this.noHp = noHp;
