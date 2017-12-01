@@ -1,5 +1,5 @@
 
-package apotek;
+package model;
 
 public class Pembeli extends Orang{
 
@@ -8,6 +8,10 @@ public class Pembeli extends Orang{
         this.nama = nama;
         this.noHp = noHp;
         this.alamat = alamat;
+    }
+    
+    public Pembeli(){
+        
     }
     
 }

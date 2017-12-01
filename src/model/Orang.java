@@ -1,5 +1,5 @@
 
-package apotek;
+package model;
 
 public abstract class Orang{
     String id;

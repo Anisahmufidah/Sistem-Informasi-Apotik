@@ -1,4 +1,4 @@
-package apotek;
+package model;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -19,6 +19,10 @@ public class Transaksi {
         this.id = id;
         this.pembeli = pembeli;
         this.kasir = kasir;
+    }
+    
+    public Transaksi(){
+        
     }
     
     public void beli(Obat obat){

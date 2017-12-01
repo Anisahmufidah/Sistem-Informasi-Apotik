@@ -1,5 +1,5 @@
 
-package apotek; 
+package model; 
 
 import java.util.ArrayList;
 
@@ -15,6 +15,9 @@ public class Kasir extends Orang{
         this.noHp = noHp;
         this.alamat = alamat;
     }
+    
+    public Kasir(){
+    };
     
     public void addTransaksi (String id, Pembeli pembeli){
         this.daftarTransaksi.add(new Transaksi(id, pembeli, this));
